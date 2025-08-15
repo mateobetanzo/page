@@ -17,14 +17,14 @@
 
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <nav class="nav">
                 <div class="nav-brand">
-                    <i class="fas fa-mountain"></i>
-                    <span>ZigZag</span>
+                    <img src="./images/foto-logo.png" alt="foto del logo zigzag patagonia">
                 </div>
                 <div class="nav-menu" id="nav-menu">
                     <a href="#inicio" class="nav-link">Inicio</a>
@@ -34,7 +34,9 @@
                     <a href="#participa" class="nav-link">Participá</a>
                     <a href="#contacto" class="nav-link">Contacto</a>
                 </div>
-                <button class="btn btn-primary">Tienda</button>
+                <a href="#productos">
+                    <button class="btn btn-primary">Tienda</button>
+                </a>
                 <div class="nav-toggle" id="nav-toggle">
                     <span></span>
                     <span></span>
@@ -55,18 +57,24 @@
             </h1>
             <p class="hero-subtitle">Productos funcionales hechos con conciencia</p>
             <div class="hero-buttons">
-                <button class="btn btn-primary btn-lg" >
-                    <i class="fas fa-shopping-bag"></i>
-                    Tienda
-                </button>
-                <button class="btn btn-dark btn-lg">
-                    <i class="fas fa-users"></i>
-                    Quiénes somos
-                </button>
-                <button class="btn btn-dark btn-lg">
-                    <i class="fas fa-heart"></i>
-                    Participá
-                </button>
+                <a href="#productos">
+                    <button class="btn btn-primary btn-lg" >
+                        <i class="fas fa-shopping-bag"></i>
+                        Tienda
+                    </button>
+                </a>
+                <a href="#quienes-somos">
+                    <button class="btn btn-dark btn-lg">
+                        <i class="fas fa-users"></i>
+                        Quiénes somos
+                    </button>
+                </a>
+                <a href="#participa">
+                    <button class="btn btn-dark btn-lg">
+                        <i class="fas fa-heart"></i>
+                        Participá
+                    </button>
+                </a>
             </div>
         </div>
     </section>
@@ -262,18 +270,18 @@
             <div class="sales-channels">
                 <h3 class="sales-title">Canales de venta</h3>
                 <div class="sales-buttons">
-                    <button class="btn btn-primary">
-                        <i class="fab fa-instagram"></i>
-                        Instagram
-                    </button>
-                    <button class="btn btn-outline">
-                        <i class="fas fa-mountain"></i>
-                        Eco Feria ZigZag
-                    </button>
-                    <button class="btn btn-outline">
-                        <i class="fas fa-map-marker-alt"></i>
-                        Showroom-taller
-                    </button>
+                    <a href="https://www.instagram.com/zigzag_patagonia/?hl=es-la" target="_blank">
+                        <button class="btn btn-primary">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </button>
+                    </a>
+                    <a href="#ubicacion">
+                        <button class="btn btn-outline">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Showroom-taller
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -298,7 +306,9 @@
                         Cupos limitados con inscripción previa. Se prioriza experiencia en costura
                         pero también necesitamos ayuda en otras áreas.
                     </p>
-                    <button class="btn btn-dark btn-full">Quiero ser voluntario/a</button>
+                    <a href="#contacto">
+                        <button class="btn btn-dark btn-full">Quiero ser voluntario/a</button>
+                    </a>
                 </div>
                 <div class="participation-card">
                     <div class="participation-icon">
@@ -309,7 +319,9 @@
                         Aceptamos textiles útiles como jeans, lonas y corduras.
                         No recibimos ropa en mal estado ni grandes volúmenes sin clasificar.
                     </p>
-                    <button class="btn btn-outline btn-full">Donar textiles</button>
+                    <a href="#contacto">
+                        <button class="btn btn-outline btn-full">Donar textiles</button>
+                    </a>
                 </div>
                 <div class="participation-card">
                     <div class="participation-icon">
@@ -320,7 +332,9 @@
                         Invitamos a emprendimientos y colectivos afines a crear alianzas
                         para potenciar el impacto positivo.
                     </p>
-                    <button class="btn btn-primary btn-full">Sumar mi marca a la red</button>
+                    <a href="#contacto">
+                        <button class="btn btn-primary btn-full">Sumar mi marca a la red</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -404,7 +418,9 @@
                         Buscamos voluntarios para cuidar nuestros espacios naturales.
                     </p>
                     <div class="project-footer">
-                        <button class="btn btn-primary btn-sm">Participar</button>
+                        <a href="#contacto">
+                            <button class="btn btn-primary btn-sm">Participar</button>
+                        </a>
                     </div>
 
                 </div>
@@ -419,7 +435,9 @@
                         Cupos limitados, inscripción previa requerida.
                     </p>
                     <div class="project-footer">
-                        <button class="btn btn-outline btn-sm">Inscribirse</button>
+                        <a href="#contacto">
+                            <button class="btn btn-outline btn-sm">Inscribirse</button>
+                        </a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -433,11 +451,10 @@
                         utilizando textiles donados.
                     </p>
                     <div class="project-footer">
-                        <button class="btn btn-outline btn-sm">Colaborar</button>
+                        <a href="#contacto">
+                            <button class="btn btn-outline btn-sm">Colaborar</button>
+                        </a>
                     </div>
-
-                    
-
                 </div>
                 <div class="project-card">
                     <div class="project-header">
@@ -450,9 +467,10 @@
                         Buscamos emprendedores y artesanos para participar.
                     </p>
                     <div class="project-footer">
-                        <button class="btn btn-outline btn-sm">Más info</button>
+                        <a href="#contacto">
+                            <button class="btn btn-outline btn-sm">Inscribirse</button>
+                        </a>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -629,7 +647,7 @@
                             </div>
                             <div class="contact-details">
                                 <h4>WhatsApp</h4>
-                                <p>+54 9 2972 123456</p>
+                                <p>+54 9 2944 390226</p>
                             </div>
                         </div>
                         <div class="contact-method">
@@ -650,8 +668,12 @@
                                 <p>San Martín de los Andes, Patagonia Argentina</p>
                             </div>
                         </div>
-                    </div>
 
+                        <div class="contact-method" id="ubicacion">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6337.57365993724!2d-71.32520617892135!3d-40.154316856366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96110e9bc877e6e7%3A0xd6377278e1a2e879!2sLos%20Chapeles%20374%2C%20Q8370%20San%20Mart%C3%ADn%20de%20los%20Andes%2C%20Neuqu%C3%A9n!5e0!3m2!1ses-419!2sar!4v1755196164018!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>

@@ -70,7 +70,7 @@ if (contactForm) {
         const data = Object.fromEntries(formData);
         
         // Simple validation
-        if (!data.nombre || !data.email || !data.mensaje) {
+        if (!data.nombre || !data.email || !data.asunto || !data.mensaje) {
             alert('Por favor, completa todos los campos obligatorios.');
             return;
         }
@@ -81,9 +81,22 @@ if (contactForm) {
             alert('Por favor, ingresa un email válido.');
             return;
         }
+
+        // Número de WhatsApp en formato internacional
+        const WHATSAPP_NUMBER = "5492944390226"; // <-- tu número
         
-        // Simulate form submission
-        alert('¡Gracias por tu mensaje! Te responderemos pronto.');
+        // Armar mensaje
+        const texto = `Hola! *Nuevo mensaje desde la web*\n\n` +
+                      `*Nombre:* ${data.nombre}\n` +
+                      `*Email:* ${data.email}\n` +
+                      `*Asunto:* ${data.asunto}\n` +
+                      `*Mensaje:* ${data.mensaje}`;
+        
+        // Abrir WhatsApp con mensaje
+        const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(texto)}`;
+        window.open(url, "_blank");
+
+        // (Opcional) Reset form después de abrir WhatsApp
         this.reset();
     });
 }
@@ -155,3 +168,5 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 });
+
+
