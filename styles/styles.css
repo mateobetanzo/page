@@ -111,6 +111,9 @@ a {
 }
 
 .nav img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-height: 80px;
     width: auto;
 }
